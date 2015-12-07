@@ -1,4 +1,3 @@
-#!/opt/miniconda/envs/thesis/bin/python
 #!/usr/bin/env python2
 """
 Run code, analyis or build documents related to this repository
@@ -32,7 +31,7 @@ arguments = docopt.docopt(__doc__, version='1.0.0')
 if arguments['--rerun'] is None:
     arguments['--rerun'] = 'errors'
 
-file_prefix = 'smumford_thesis'
+file_prefix = 'thesis'
 #Compile Paper
 if arguments['paper'] or arguments['thesis']:
     os.chdir('thesis')
