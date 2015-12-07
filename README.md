@@ -11,7 +11,7 @@ The dependancies needed are given in `conda_requirements.txt`, the following
 packages need to be installed in addition to the ones given in the 
 conda requirements folder:
 
-* [matplotlib](http://matplotlib.org/) >= 1.5.dev
+* [matplotlib](http://matplotlib.org/)
 * [texfigure](https://github.com/Cadair/texfigure)
 
 ### Using conda
