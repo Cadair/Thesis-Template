@@ -1,0 +1,30 @@
+% !TeX root = ../thesis.tex
+%*****************************************************************************************
+%*********************************** First Chapter ***************************************
+%*****************************************************************************************
+\label{ch:Intro}
+\chapter{Introduction}  %Title of the First Chapter
+
+\begin{pycode}[chapter1]
+from __future__ import print_function
+
+ch1 = texfigure.Manager(pytex, number=1, base_path='./Chapter1/')
+\end{pycode}
+
+\begin{pycode}[chapter1]
+import sunpy.map
+
+fig = plt.figure(dpi=100)
+mm = sunpy.map.Map(ch1.data_file('gband_image_00200.fits'))
+mm = mm.submap([-440,440]*u.arcsec, [-440,440]*u.arcsec)
+mm.plot_settings['cmap'] = 'plasma'
+mm.plot_settings['title'] = ''
+mm.plot()
+
+fig.tight_layout()
+fig.subplots_adjust(bottom=0.15)
+photosphere = ch1.save_figure('gband', fig)
+photosphere.caption = "A G-Band image of the solar photosphere."
+\end{pycode}
+
+\py[chapter1]|photosphere|
