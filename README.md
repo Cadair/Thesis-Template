@@ -20,11 +20,13 @@ environment with the following command:
 
 `conda create -n thesis python=2 matplotlib`
 
-`pip install texfigure`
-
 activate the new environment with:
 
 `source activate thesis`
+
+then 
+
+`pip install texfigure`
 
 ### Obtaining the data
 
