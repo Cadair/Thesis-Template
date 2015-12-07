@@ -7,9 +7,7 @@ Information
 
 This is based on the thesis template [here](https://github.com/kks32/phd-thesis-template).
 To run this you need Python 2.7 with PythonTex, PDFLaTeX and BibTeX.
-The dependancies needed are given in `conda_requirements.txt`, the following
-packages need to be installed in addition to the ones given in the 
-conda requirements folder:
+These dependancies are needed:
 
 * [matplotlib](http://matplotlib.org/)
 * [texfigure](https://github.com/Cadair/texfigure)
@@ -21,6 +19,8 @@ TexLive and pythontex installed in your system path. You can create a conda
 environment with the following command:
 
 `conda create -n thesis python=2 matplotlib`
+
+`pip install texfigure`
 
 activate the new environment with:
 
