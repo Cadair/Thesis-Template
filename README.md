@@ -1,7 +1,5 @@
-Simulations of Magnetohydrodynamic Waves Driven by Photospheric Motions
-=======================================================================
-
-This is the PhD Thesis of Stuart Mumford.
+PythonTeX Thesis Template
+=========================
 
 
 Information
@@ -15,8 +13,6 @@ conda requirements folder:
 
 * [matplotlib](http://matplotlib.org/) >= 1.5.dev
 * [texfigure](https://github.com/Cadair/texfigure)
-* [pysac](https://github.com/SWAT-Sheffield/pysac)
-* [colormath](https://pypi.python.org/pypi/colormath/)
 
 ### Using conda
 
@@ -24,7 +20,7 @@ You can build the thesis from inside a conda environment as long as you have
 TexLive and pythontex installed in your system path. You can create a conda 
 environment with the following command:
 
-`conda create -n thesis --file conda_requirements.txt`
+`conda create -n thesis python=2 matplotlib`
 
 activate the new environment with:
 
@@ -43,7 +39,7 @@ pdf with the following command:
 
 `python run.py thesis`
 
-This will produce a file: `thesis/smumford_thesis.pdf`.
+This will produce a file: `thesis/thesis.pdf`.
 
 
 Copyright
@@ -54,11 +50,4 @@ copyright Krishna Kumar and licensed under the terms of the MIT licence. All
 LaTeX code (not embedded Python) is licenced under the MIT license.
 All Python code contained in this repository is copyright Stuart Mumford and 
 is made availble under the MIT or 2-clause BSD license.
-
-The actually content of the document is made availble under the terms of the
-CC-BY 4.0 license. The contents of Chapter 4 form part of [Mumford et. al
-(2015)](http://dx.doi.org/10.1088/0004-637X/799/1/6) and is subject to the
-license of that journal. Permission for the material to be included and
-distributed as part of this thesis has been obtained, but derivative works are
-a murky area.
 

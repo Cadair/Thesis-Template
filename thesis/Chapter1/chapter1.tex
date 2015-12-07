@@ -12,19 +12,15 @@ ch1 = texfigure.Manager(pytex, number=1, base_path='./Chapter1/')
 \end{pycode}
 
 \begin{pycode}[chapter1]
-import sunpy.map
-
 fig = plt.figure(dpi=100)
-mm = sunpy.map.Map(ch1.data_file('gband_image_00200.fits'))
-mm = mm.submap([-440,440]*u.arcsec, [-440,440]*u.arcsec)
-mm.plot_settings['cmap'] = 'plasma'
-mm.plot_settings['title'] = ''
-mm.plot()
+
+xx = np.linspace(0, 6*np.pi, 1000)
+plt.plot(xx, np.sin(xx))
 
 fig.tight_layout()
 fig.subplots_adjust(bottom=0.15)
-photosphere = ch1.save_figure('gband', fig)
-photosphere.caption = "A G-Band image of the solar photosphere."
+photosphere = ch1.save_figure('sin', fig)
+photosphere.caption = "Some sine wave."
 \end{pycode}
 
 \py[chapter1]|photosphere|
